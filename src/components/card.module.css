@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  max-width: 600px;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #7d7a7a66;
+  border-radius: 30px;
+  background-color: rgb(254, 243, 229);
+
+}
+
+.container > .img > img {
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 25px;
+}
+
+.content > .prise {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content > .prise > button{
+  background-color: #FFC222;
+  color: black;
+}
+.content > .prise > p{
+  color: #FFC222;
+  font-weight: bold;
+}
