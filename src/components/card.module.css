@@ -11,6 +11,7 @@
 
 .container > .img > img {
   border-radius: 20px;
+  max-width: 200px;
 }
 
 .content {

@@ -1,6 +1,8 @@
 import s from "./card.module.css";
 
-export function Card({title, description, price, image}) {
+// Карточка получает инфу о блюде и функцию onAddToCart
+export function Card({title, description, price, image, onAddToCart }) {
+  // console.log(onAddToCart)
   return (
     <div className={s.container}>
       <div className={s.img}>
@@ -13,7 +15,7 @@ export function Card({title, description, price, image}) {
         </p>
         <div className={s.prise}>
           <p>{price}₽</p>
-          <button>добавить в корзину</button>
+          <button onClick={onAddToCart}>добавить в корзину</button>
         </div>
       </div>
     </div>
